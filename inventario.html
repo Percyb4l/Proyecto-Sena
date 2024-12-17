@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Dispositivos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="inventario.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/Sena-colombia-logo-vector.png" alt="Logo Colegio" class="logo">
+            <h1>Inventario de Dispositivos</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Administrar Inventario</h2>
+            <form id="form-inventario">
+                <input type="text" id="nombre-activo" placeholder="Nombre del Activo" required>
+                <select id="estado-activo">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+                <button type="submit">Registrar Activo</button>
+            </form>
+            <table id="tabla-inventario">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos generados dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Volver al índice</a></p>
+    </footer>
+</body>
+</html>
+
